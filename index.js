@@ -266,18 +266,18 @@ function renderProfilePool() {
         <div class="cr-editor-grid">
             <div class="cr-row cr-random-counts">
                 <label class="cr-field cr-grow">
-                    <span>Minimum normal assistant replies</span>
+                    <span>Minimum Replies</span>
                     <input class="cr-random-min" type="number" min="1" step="1" value="${escapeHtml(low)}">
                 </label>
                 <label class="cr-field cr-grow">
-                    <span>Maximum normal assistant replies</span>
+                    <span>Maximum Replies</span>
                     <input class="cr-random-max" type="number" min="1" step="1" value="${escapeHtml(high)}">
                 </label>
             </div>
         </div>
         <div class="cr-card-context cr-switch-context">
             <span>Current target</span>
-            <strong>${escapeHtml(target)} replies before weighted switch from ${escapeHtml(profileCount)} profile${profileCount === 1 ? '' : 's'}</strong>
+            <strong>${escapeHtml(target)} replies. Weighted randomization with ${escapeHtml(profileCount)} profile${profileCount === 1 ? '' : 's'}</strong>
         </div>
         <div class="cr-profile-section">
             <div class="cr-profile-title">
