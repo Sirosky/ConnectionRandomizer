@@ -1,0 +1,59 @@
+<div id="connection_randomizer" class="connection-randomizer inline-drawer">
+    <div class="inline-drawer-toggle inline-drawer-header">
+        <b>Connection Randomizer</b>
+        <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+    </div>
+
+    <div class="inline-drawer-content">
+        <div class="cr-hero">
+            <div>
+                <div class="cr-eyebrow">Connection Manager Automation</div>
+                <h3>Connection Randomizer</h3>
+                <p>Rotate SillyTavern connection profiles after a configurable number of normal assistant replies.</p>
+            </div>
+            <label class="cr-toggle">
+                <input id="cr_enabled" type="checkbox">
+                <span>Enabled</span>
+            </label>
+        </div>
+
+        <div class="cr-grid">
+            <section class="cr-card cr-span-2">
+                <div class="cr-section-title">
+                    <div>
+                        <h4>Preset</h4>
+                        <p>The selected preset is the default unless the current card has an override.</p>
+                    </div>
+                </div>
+                <div class="cr-row cr-wrap">
+                    <label class="cr-field cr-grow">
+                        <span>Default preset</span>
+                        <select id="cr_preset_select"></select>
+                    </label>
+                    <label class="cr-field cr-grow">
+                        <span>Card override</span>
+                        <select id="cr_card_preset_select"></select>
+                    </label>
+                    <button id="cr_preset_rename" class="menu_button cr-icon-button" title="Rename preset" aria-label="Rename preset"><i class="fa-solid fa-pen"></i></button>
+                    <button id="cr_preset_new" class="menu_button cr-icon-button" title="New preset" aria-label="New preset"><i class="fa-solid fa-plus"></i></button>
+                    <button id="cr_preset_duplicate" class="menu_button cr-icon-button" title="Duplicate preset" aria-label="Duplicate preset"><i class="fa-solid fa-copy"></i></button>
+                    <button id="cr_preset_delete" class="menu_button danger cr-icon-button" title="Delete preset" aria-label="Delete preset"><i class="fa-solid fa-trash"></i></button>
+                </div>
+                <div class="cr-card-context">
+                    <span>Current card</span>
+                    <strong id="cr_current_card">No card selected</strong>
+                </div>
+            </section>
+
+            <section class="cr-card cr-span-2">
+                <div class="cr-section-title">
+                    <div>
+                        <h4>Profile Rotation</h4>
+                        <p>Select profiles and weights. After every random X-Y normal assistant replies, one of the other selected profiles is loaded.</p>
+                    </div>
+                </div>
+                <div id="cr_profile_pool" class="cr-profile-pool"></div>
+            </section>
+        </div>
+    </div>
+</div>
