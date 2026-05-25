@@ -1,5 +1,5 @@
 # Connection Randomizer
-A simple SillyTavern extension will automatically and randomly swap between pre-set connection profiles! Good for introducing a blend of models into your roleplays.
+A simple SillyTavern extension will automatically and randomly swap between pre-set connection profiles! Good for introducing a blend of models in sessions, allowing models to offset each other's quirks.
 
 ## Installation
 
